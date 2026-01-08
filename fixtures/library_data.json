@@ -1,0 +1,379 @@
+[
+  {
+    "model": "books.author",
+    "pk": 1,
+    "fields": {
+      "name": "J.K. Rowling",
+      "biography": "British author, best known for the Harry Potter series."
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 2,
+    "fields": {
+      "name": "George Orwell",
+      "biography": "English novelist and essayist."
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 3,
+    "fields": {
+      "name": "Stephen Hawking",
+      "biography": "Theoretical physicist and cosmologist."
+    }
+  }
+,
+{
+    "model": "books.author",
+    "pk": 4,
+    "fields": {
+      "name": "Agatha Christie",
+      "biography": "Famous mystery novelist."
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 5,
+    "fields": {
+      "name": "J.R.R. Tolkien",
+      "biography": "English writer and professor."
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 6,
+    "fields": {
+      "name": "Dan Brown",
+      "biography": "American author of thriller novels."
+    }
+  },
+
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "isbn": "9780747532699",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 1,
+      "created_at": "2025-02-01T10:00:00Z",
+      "updated_at": "2025-02-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "1984",
+      "isbn": "9780451524935",
+      "category": "Dystopian",
+      "is_available": true,
+      "author": 2,
+      "created_at": "2025-02-03T12:00:00Z",
+      "updated_at": "2025-02-03T12:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "A Brief History of Time",
+      "isbn": "9780553380163",
+      "category": "Science",
+      "is_available": true,
+      "author": 3,
+      "created_at": "2025-02-05T09:00:00Z",
+      "updated_at": "2025-02-05T09:00:00Z"
+    }
+  }
+  ,
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "title": "The Hobbit",
+      "isbn": "9780547928227",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 5,
+      "created_at": "2025-02-06T10:00:00Z",
+      "updated_at": "2025-02-06T10:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "title": "The Lord of the Rings",
+      "isbn": "9780618640157",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 5,
+      "created_at": "2025-02-06T11:00:00Z",
+      "updated_at": "2025-02-06T11:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "title": "Murder on the Orient Express",
+      "isbn": "9780062693662",
+      "category": "Mystery",
+      "is_available": true,
+      "author": 4,
+      "created_at": "2025-02-07T09:30:00Z",
+      "updated_at": "2025-02-07T09:30:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "title": "The Da Vinci Code",
+      "isbn": "9780307474278",
+      "category": "Thriller",
+      "is_available": true,
+      "author": 6,
+      "created_at": "2025-02-07T10:30:00Z",
+      "updated_at": "2025-02-07T10:30:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "title": "Angels & Demons",
+      "isbn": "9780743493468",
+      "category": "Thriller",
+      "is_available": true,
+      "author": 6,
+      "created_at": "2025-02-07T11:00:00Z",
+      "updated_at": "2025-02-07T11:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "title": "Animal Farm",
+      "isbn": "9780451526342",
+      "category": "Political Satire",
+      "is_available": true,
+      "author": 2,
+      "created_at": "2025-02-08T08:00:00Z",
+      "updated_at": "2025-02-08T08:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "title": "The Silmarillion",
+      "isbn": "9780618126989",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 5,
+      "created_at": "2025-02-08T09:00:00Z",
+      "updated_at": "2025-02-08T09:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 11,
+    "fields": {
+      "title": "Death on the Nile",
+      "isbn": "9780062073556",
+      "category": "Mystery",
+      "is_available": true,
+      "author": 4,
+      "created_at": "2025-02-08T10:00:00Z",
+      "updated_at": "2025-02-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 12,
+    "fields": {
+      "title": "Inferno",
+      "isbn": "9781400079155",
+      "category": "Thriller",
+      "is_available": true,
+      "author": 6,
+      "created_at": "2025-02-09T09:00:00Z",
+      "updated_at": "2025-02-09T09:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 13,
+    "fields": {
+      "title": "The Two Towers",
+      "isbn": "9780547928203",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 5,
+      "created_at": "2025-02-09T10:00:00Z",
+      "updated_at": "2025-02-09T10:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 14,
+    "fields": {
+      "title": "The Return of the King",
+      "isbn": "9780547928197",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 5,
+      "created_at": "2025-02-09T11:00:00Z",
+      "updated_at": "2025-02-09T11:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 15,
+    "fields": {
+      "title": "The ABC Murders",
+      "isbn": "9780062073563",
+      "category": "Mystery",
+      "is_available": true,
+      "author": 4,
+      "created_at": "2025-02-10T09:00:00Z",
+      "updated_at": "2025-02-10T09:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 16,
+    "fields": {
+      "title": "Digital Fortress",
+      "isbn": "9780312335167",
+      "category": "Thriller",
+      "is_available": true,
+      "author": 6,
+      "created_at": "2025-02-10T10:00:00Z",
+      "updated_at": "2025-02-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 17,
+    "fields": {
+      "title": "The Casual Vacancy",
+      "isbn": "9780316228533",
+      "category": "Drama",
+      "is_available": true,
+      "author": 1,
+      "created_at": "2025-02-10T11:00:00Z",
+      "updated_at": "2025-02-10T11:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 18,
+    "fields": {
+      "title": "Fantastic Beasts and Where to Find Them",
+      "isbn": "9781338132311",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 1,
+      "created_at": "2025-02-11T09:00:00Z",
+      "updated_at": "2025-02-11T09:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 19,
+    "fields": {
+      "title": "The Theory of Everything",
+      "isbn": "9788179925911",
+      "category": "Science",
+      "is_available": true,
+      "author": 3,
+      "created_at": "2025-02-11T10:00:00Z",
+      "updated_at": "2025-02-11T10:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 20,
+    "fields": {
+      "title": "Brief Answers to the Big Questions",
+      "isbn": "9781473695997",
+      "category": "Science",
+      "is_available": true,
+      "author": 3,
+      "created_at": "2025-02-11T11:00:00Z",
+      "updated_at": "2025-02-11T11:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 21,
+    "fields": {
+      "title": "Homage to Catalonia",
+      "isbn": "9780156421171",
+      "category": "Biography",
+      "is_available": true,
+      "author": 2,
+      "created_at": "2025-02-12T09:00:00Z",
+      "updated_at": "2025-02-12T09:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 22,
+    "fields": {
+      "title": "The Mysterious Affair at Styles",
+      "isbn": "9780007119271",
+      "category": "Mystery",
+      "is_available": true,
+      "author": 4,
+      "created_at": "2025-02-12T10:00:00Z",
+      "updated_at": "2025-02-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 23,
+    "fields": {
+      "title": "Deception Point",
+      "isbn": "9780671027382",
+      "category": "Thriller",
+      "is_available": true,
+      "author": 6,
+      "created_at": "2025-02-12T11:00:00Z",
+      "updated_at": "2025-02-12T11:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 24,
+    "fields": {
+      "title": "The Children of Húrin",
+      "isbn": "9780618894642",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 5,
+      "created_at": "2025-02-13T09:00:00Z",
+      "updated_at": "2025-02-13T09:00:00Z"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 25,
+    "fields": {
+      "title": "Fantastic Beasts: The Crimes of Grindelwald",
+      "isbn": "9781338263893",
+      "category": "Fantasy",
+      "is_available": true,
+      "author": 1,
+      "created_at": "2025-02-13T10:00:00Z",
+      "updated_at": "2025-02-13T10:00:00Z"
+    }
+  }
+
+]
