@@ -1,10 +1,12 @@
 from django.db import models
 from users.models import User
 from books.models import Book
+from uuid import uuid4
 # Create your models here.
 
 
 class Member(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='member_profile')
     membership_date = models.DateField(auto_now_add=True)
     is_active = models.BooleanField(default=True)

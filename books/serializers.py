@@ -22,3 +22,9 @@ class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Author
         fields = ['id', 'name', 'biography', 'books']
+
+from rest_framework import serializers
+
+
+class BorrowActionSerializer(serializers.Serializer):
+    pass

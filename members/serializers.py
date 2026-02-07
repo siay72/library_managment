@@ -24,7 +24,8 @@ class MemberSerializer(serializers.ModelSerializer):
 class BorrowBookSerializer(serializers.ModelSerializer):
     book_id = serializers.IntegerField(write_only=True)
     book_title = serializers.CharField(source='book.title', read_only=True)
-    member_id = serializers.IntegerField(write_only=True)
+    member_id = serializers.UUIDField(write_only=True)
+
 
     class Meta:
         model = BorrowedBook

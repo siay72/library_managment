@@ -9,12 +9,14 @@ from members.serializers import (
     BorrowBookSerializer,
     ReturnBookSerializer
 )
-
+from rest_framework.permissions import IsAuthenticated
+from api.permissions import IsAdminOrReadOnly
 
 
 class MemberViewSet(ModelViewSet):
     queryset = Member.objects.all()
     serializer_class = MemberSerializer
+    permission_classes = [IsAdminOrReadOnly, IsAuthenticated]
 
     def destroy(self, request, *args, **kwargs):
         member = self.get_object()
@@ -28,7 +30,10 @@ class MemberViewSet(ModelViewSet):
 
 
 class BorrowedBookViewSet(ModelViewSet):
-    queryset = BorrowedBook.objects.all()
+    permission_classes = [IsAdminOrReadOnly, IsAuthenticated]
+
+    def get_queryset(self):
+        return BorrowedBook.objects.select_related('member', 'book').all()
 
     def get_serializer_class(self):
         if self.request.method == 'POST':
